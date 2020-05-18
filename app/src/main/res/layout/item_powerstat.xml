@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/dp_16"
+    android:layout_marginTop="@dimen/dp_8"
+    android:layout_marginEnd="@dimen/dp_16">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/light_boundary_outline"
+        android:padding="@dimen/dp_16"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/ll_intelligence"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_8"
+            android:background="@drawable/boundary_outline"
+            android:backgroundTint="@color/colorBlue"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_8"
+            app:layout_constraintEnd_toStartOf="@id/ll_speed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_intelligence"
+                android:layout_width="@dimen/dp_32"
+                android:layout_height="@dimen/dp_32"
+                android:background="@drawable/circular_outline"
+                android:gravity="center"
+                android:text="@string/_100"
+                android:textColor="@color/colorBlue"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_intelligence_heading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_weight="1"
+                android:text="@string/intelligence"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_strength"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_8"
+            android:background="@drawable/boundary_outline"
+            android:backgroundTint="@color/colorTeal"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_8"
+            app:layout_constraintEnd_toStartOf="@id/ll_power"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_intelligence">
+
+            <TextView
+                android:id="@+id/tv_strength"
+                android:layout_width="@dimen/dp_32"
+                android:layout_height="@dimen/dp_32"
+                android:background="@drawable/circular_outline"
+                android:gravity="center"
+                android:text="@string/_100"
+                android:textColor="@color/colorTeal"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_strength_heading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_weight="1"
+                android:text="@string/strength"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_durability"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_8"
+            android:background="@drawable/boundary_outline"
+            android:backgroundTint="@color/colorGreen"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_8"
+            app:layout_constraintEnd_toStartOf="@id/ll_combat"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_strength">
+
+            <TextView
+                android:id="@+id/tv_durability"
+                android:layout_width="@dimen/dp_32"
+                android:layout_height="@dimen/dp_32"
+                android:background="@drawable/circular_outline"
+                android:gravity="center"
+                android:text="@string/_100"
+                android:textColor="@color/colorGreen"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_durability_heading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_weight="1"
+                android:text="@string/durability"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_speed"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_16"
+            android:background="@drawable/boundary_outline"
+            android:backgroundTint="@color/colorYellow"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ll_intelligence"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_speed"
+                android:layout_width="@dimen/dp_32"
+                android:layout_height="@dimen/dp_32"
+                android:background="@drawable/circular_outline"
+                android:gravity="center"
+                android:text="@string/_100"
+                android:textColor="@color/colorYellow"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_speed_heading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_weight="1"
+                android:text="@string/speed"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_power"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_16"
+            android:background="@drawable/boundary_outline"
+            android:backgroundTint="@color/colorOrange"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ll_strength"
+            app:layout_constraintTop_toBottomOf="@id/ll_speed">
+
+            <TextView
+                android:id="@+id/tv_power"
+                android:layout_width="@dimen/dp_32"
+                android:layout_height="@dimen/dp_32"
+                android:background="@drawable/circular_outline"
+                android:gravity="center"
+                android:text="@string/_100"
+                android:textColor="@color/colorOrange"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_power_heading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_weight="1"
+                android:text="@string/power"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_combat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_8"
+            android:layout_marginTop="@dimen/dp_16"
+            android:background="@drawable/boundary_outline"
+            android:backgroundTint="@color/colorRed"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="@dimen/dp_8"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ll_durability"
+            app:layout_constraintTop_toBottomOf="@id/ll_power">
+
+            <TextView
+                android:id="@+id/tv_combat"
+                android:layout_width="@dimen/dp_32"
+                android:layout_height="@dimen/dp_32"
+                android:background="@drawable/circular_outline"
+                android:gravity="center"
+                android:text="@string/_100"
+                android:textColor="@color/colorRed"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_combat_heading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_weight="1"
+                android:text="@string/combat"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/sp_16"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tv_powerstat_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boundary_outline"
+        android:backgroundTint="@color/primary_light"
+        android:gravity="center"
+        android:paddingStart="@dimen/dp_16"
+        android:paddingTop="@dimen/dp_4"
+        android:paddingEnd="@dimen/dp_16"
+        android:paddingBottom="@dimen/dp_4"
+        android:text="@string/powerstat"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/sp_20"
+        android:textStyle="bold"
+        android:translationX="@dimen/dp_16"
+        android:translationY="@dimen/dp_16"
+        app:layout_constraintBottom_toTopOf="@id/main_layout"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
